@@ -1,0 +1,67 @@
+:root {
+  --navbar-height: 4.5rem;
+  --footer-height: 4.5rem;
+
+  --box-shadow-1: 4px 3px 9px 0px rgb(0 0 0 / 10%);
+  --box-shadow-2: 12px 9px 38px 0px rgb(0 0 0 / 10%);
+
+  --transition-slow: all 0.4s ease-in-out;
+  --transition-base: all 0.3s ease-in-out;
+  --transition-fast: all 0.2s ease-in-out;
+
+  --clr-bg-0: hsl(0, 0%, 100%);
+  --clr-bg-1: hsl(0, 0%, 100%);
+  --clr-bg-2: hsl(0, 0%, 90%);
+
+  --clr-text-0: hsl(0, 0%, 0%);
+  --clr-text-1: hsl(0, 0%, 23%);
+  --clr-text-2: hsl(0, 0%, 52%);
+
+  --gradient-1: linear-gradient(to right, #12c1e9, #c471ef, #f64f58);
+
+  --clr-accent-1: hsl(0, 0%, 0%);
+}
+
+.container-xl {
+  margin: 0 auto;
+  width: 1400px;
+}
+
+.container-lg {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.container-md {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+@media (max-width: 1400px) {
+  .container-xl {
+    margin: 1rem;
+    width: calc(100% - 2rem);
+  }
+}
+
+@media (max-width: 1200px) {
+  .container-lg {
+    margin: 1rem;
+    width: calc(100% - 2rem);
+  }
+}
+
+@media (max-width: 1000px) {
+  .container-md {
+    margin: 1rem;
+    width: calc(100% - 2rem);
+  }
+}
+
+.router-link-active {
+  color: var(--clr-accent-1) !important;
+}
+
+.accent {
+  color: var(--clr-accent-1);
+}
