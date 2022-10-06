@@ -1,10 +1,51 @@
+import project1 from "./../assets/projects/project1.jpg";
+import project2 from "./../assets/projects/project2.jpg";
+import project3 from "./../assets/projects/project3.jpg";
+import project4 from "./../assets/projects/project4.jpg";
+import project5 from "./../assets/projects/project5.jpg";
+import project6 from "./../assets/projects/project6.jpg";
+
 export const projects = [
   {
-    title: "Project 1",
-    subtitle: "Subtitle 1",
-    description: "Description 1",
-    image: "https://picsum.photos/200/300",
-    tags: ["tag1", "tag2", "tag3"],
-    link: "https://www.google.com",
+    title: "Cool advanced mobile app",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    image: project1,
+    tags: ["App", "Creative", "Mobile"],
+    link: "https://www.github.com",
+  },
+  {
+    title: "Cool advanced mobile app",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    image: project2,
+    tags: ["App", "Creative", "Mobile"],
+    link: "https://www.github.com",
+  },
+  {
+    title: "Cool advanced mobile app",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    image: project3,
+    tags: ["App", "Creative", "Mobile"],
+    link: "https://www.github.com",
+  },
+  {
+    title: "Cool advanced mobile app",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    image: project4,
+    tags: ["App", "Creative", "Mobile"],
+    link: "https://www.github.com",
+  },
+  {
+    title: "Cool advanced mobile app",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    image: project5,
+    tags: ["App", "Creative", "Mobile"],
+    link: "https://www.github.com",
+  },
+  {
+    title: "Cool advanced mobile app",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    image: project6,
+    tags: ["App", "Creative", "Mobile"],
+    link: "https://www.github.com",
   },
 ];
