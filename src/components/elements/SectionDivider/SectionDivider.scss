@@ -1,0 +1,8 @@
+.section-divider {
+  height: 0.2rem;
+  background-image: var(--gradient-1);
+
+  &--left {
+    width: 60%;
+  }
+}

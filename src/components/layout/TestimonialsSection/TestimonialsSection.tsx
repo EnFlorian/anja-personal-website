@@ -1,4 +1,4 @@
-import "TestionialsSection.scss";
+import "./TestimonialsSection.scss";
 
 const TestimonialsSection = () => {
   return <div>TestimonialsSection</div>;

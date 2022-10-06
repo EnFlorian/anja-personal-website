@@ -1,4 +1,4 @@
-import "./SectionHeader.scss";
+import "./ServiceCard.scss";
 
 const ServiceCard = () => {
   return <div>ServiceCard</div>;

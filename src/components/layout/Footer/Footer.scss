@@ -1,0 +1,20 @@
+.footer {
+  background-color: var(--clr-bg-2);
+  display: flex;
+  flex-direction: column;
+  height: var(--footer-height);
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    color: var(--clr-text-0);
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}
