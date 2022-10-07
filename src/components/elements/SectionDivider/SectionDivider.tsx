@@ -1,11 +1,11 @@
 import "./SectionDivider.scss";
 
-interface SectionDividerProps {
+interface ISectionDividerProps {
   left?: boolean;
   right?: boolean;
 }
 
-const SectionDivider = ({ left, right }: SectionDividerProps) => {
+const SectionDivider = ({ left, right }: ISectionDividerProps) => {
   const renderedDivider = () => {
     if (left) {
       return <div className="section-divider section-divider--left"></div>;

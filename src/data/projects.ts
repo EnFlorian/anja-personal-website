@@ -24,7 +24,7 @@ export const projects = [
     title: "Cool advanced mobile app",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     image: project3,
-    tags: ["App", "Creative", "Mobile"],
+    tags: ["App", "Creative", "Desktop"],
     link: "https://www.github.com",
   },
   {
@@ -45,7 +45,7 @@ export const projects = [
     title: "Cool advanced mobile app",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     image: project6,
-    tags: ["App", "Creative", "Mobile"],
+    tags: ["Fitness", "Creative", "Mobile"],
     link: "https://www.github.com",
   },
 ];
