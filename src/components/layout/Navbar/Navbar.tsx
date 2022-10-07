@@ -11,6 +11,15 @@ const Navbar = () => {
     </li>
   ));
 
+  window.onscroll = () => {
+    const scrollIndicator = document.querySelector(".navbar");
+    if (document.documentElement.scrollTop > 20) {
+      scrollIndicator?.classList.add("navbar--scrolled");
+    } else {
+      scrollIndicator?.classList.remove("navbar--scrolled");
+    }
+  };
+
   return (
     <section className="navbar">
       <div className="navbar__wrapper container-xl">

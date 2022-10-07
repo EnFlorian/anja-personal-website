@@ -1,12 +1,12 @@
 .hero-section {
   position: relative;
-  min-height: calc(100vh - var(--navbar-height));
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 5rem 0;
+  padding: 10rem 0 5rem 0;
 
   &::before {
-    clip-path: polygon(0 0, 100% 0%, 100% 83%, 0 30%);
+    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 40%);
     content: "";
     position: absolute;
     top: 0;
