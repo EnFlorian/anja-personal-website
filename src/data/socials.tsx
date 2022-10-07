@@ -4,21 +4,21 @@ export const socials = [
   {
     name: "Facebook",
     url: "https://www.facebook.com/yourname",
-    icon: FaFacebook,
+    icon: <FaFacebook />,
   },
   {
     name: "Twitter",
     url: "https://twitter.com/yourname",
-    icon: FaTwitter,
+    icon: <FaTwitter />,
   },
   {
     name: "Instagram",
     url: "https://www.instagram.com/yourname",
-    icon: FaInstagram,
+    icon: <FaInstagram />,
   },
   {
     name: "LinkedIn",
     url: "https://www.linkedin.com/in/yourname",
-    icon: FaLinkedin,
+    icon: <FaLinkedin />,
   },
 ];
