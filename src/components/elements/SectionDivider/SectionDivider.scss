@@ -1,8 +1,19 @@
 .section-divider {
-  height: 0.2rem;
+  position: absolute;
+  height: 0.15rem;
   background-image: var(--gradient-1);
 
+  &__wrapper {
+    position: relative;
+  }
+
   &--left {
+    left: 0;
+    width: 60%;
+  }
+
+  &--right {
+    right: 0;
     width: 60%;
   }
 }

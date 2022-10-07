@@ -1,0 +1,26 @@
+.section-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+  gap: 1rem;
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--clr-text-2);
+  }
+
+  &__subtitle {
+    font-size: 3rem;
+    font-weight: 900;
+    max-width: 40rem;
+    text-align: center;
+    line-height: 1;
+    background: var(--gradient-1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

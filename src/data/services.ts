@@ -1,7 +1,7 @@
-import analyticsIcon from "assets/icons/icon-analytics.svg";
-import designIcon from "assets/icons/icon-design.svg";
-import marketingIcon from "assets/icons/icon-marketing.svg";
-import mobileIcon from "assets/icons/icon-mobile.svg";
+import analyticsIcon from "../assets/icons/icon-analytics.svg";
+import designIcon from "../assets/icons/icon-design.svg";
+import marketingIcon from "../assets/icons/icon-marketing.svg";
+import mobileIcon from "../assets/icons/icon-mobile.svg";
 
 export const services = [
   {

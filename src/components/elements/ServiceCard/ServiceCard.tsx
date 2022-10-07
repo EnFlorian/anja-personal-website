@@ -1,7 +1,7 @@
 import "./ServiceCard.scss";
 
 interface IServiceCardProps {
-  icon: React.ReactNode;
+  icon: string;
   title: string;
   description: string;
 }
@@ -10,7 +10,9 @@ const ServiceCard = ({ icon, title, description }: IServiceCardProps) => {
   return (
     <div className="service-card">
       <div className="service-card__icon-wrapper">
-        {<div className="service-card__icon">{icon}</div>}
+        <div className="service-card__icon-wrapper">
+          <img className="service-card__icon" src={icon} alt={title} />
+        </div>
       </div>
       <div className="service-card__content">
         <h3 className="service-card__title">{title}</h3>

@@ -15,6 +15,7 @@ const Home = () => {
       <HeroSection />
       <SectionDivider left />
       <ServicesSection />
+      <SectionDivider right />
       <PortfolioSection />
       <IntermissionSection />
       <TestimonialsSection />

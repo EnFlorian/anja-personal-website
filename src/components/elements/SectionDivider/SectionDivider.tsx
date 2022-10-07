@@ -16,7 +16,7 @@ const SectionDivider = ({ left, right }: ISectionDividerProps) => {
     }
   };
 
-  return <>{renderedDivider()}</>;
+  return <div className="section-divider__wrapper">{renderedDivider()}</div>;
 };
 
 export default SectionDivider;
