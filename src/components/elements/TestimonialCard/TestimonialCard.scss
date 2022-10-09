@@ -1,0 +1,60 @@
+.testimonial-card {
+  background-color: var(--clr-bg-2);
+  display: flex;
+  padding: 1rem;
+  border-radius: 0.2rem;
+
+  &__left-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+
+  &__right-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+  }
+
+  &__image-wrapper {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 0.2rem solid transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(white, white), var(--gradient-1);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    overflow: hidden;
+  }
+
+  &__image {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  &__name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--clr-text-1);
+  }
+
+  &__title {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--clr-text-2);
+  }
+
+  &__description {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--clr-text-2);
+  }
+}

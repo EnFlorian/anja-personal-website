@@ -28,60 +28,79 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="services-section">
-      <div className="services-section__wrapper container-xl">
-        <SectionHeader title="Contact Me" subtitle="Get in touch with me" />
+    <section id="contact" className="contact-section container-lg">
+      <SectionHeader title="Contact Me" subtitle="Get in touch with me" />
 
-        <Formik
-          initialValues={{ name: "", email: "", message: "" }}
-          validate={validateForm}
-          onSubmit={(values, { setSubmitting }) => {
-            setSubmitting(true);
-            // TODO: Send form data to backend
-            console.log(values);
-          }}
-        >
-          {({
-            values,
-            errors,
-            touched,
-            handleChange,
-            handleBlur,
-            handleSubmit,
-            isSubmitting,
-          }) => (
-            <form onSubmit={handleSubmit}>
-              <input
-                type="text"
-                name="name"
-                onChange={handleChange}
-                onBlur={handleBlur}
-                value={values.name}
-              />
-              {errors.name && touched.name && errors.name}
-              <input
-                type="email"
-                name="email"
-                onChange={handleChange}
-                onBlur={handleBlur}
-                value={values.email}
-              />
-              {errors.email && touched.email && errors.email}
+      <Formik
+        initialValues={{ name: "", email: "", message: "" }}
+        validate={validateForm}
+        onSubmit={(values, { setSubmitting }) => {
+          setSubmitting(true);
+          // TODO: Send form data to backend
+          console.log(values);
+        }}
+      >
+        {({
+          values,
+          errors,
+          touched,
+          handleChange,
+          handleBlur,
+          handleSubmit,
+          isSubmitting,
+        }) => (
+          <form className="contact-section__form" onSubmit={handleSubmit}>
+            <div className="contact-section__form-details">
+              <div className="contact-section__input-group">
+                {errors.name && touched.name && errors.name}
+
+                <input
+                  className="contact-section__input"
+                  type="text"
+                  name="name"
+                  placeholder="Name..."
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.name}
+                />
+              </div>
+              <div className="contact-section__input-group">
+                {errors.email && touched.email && errors.email}
+
+                <input
+                  className="contact-section__input"
+                  type="email"
+                  name="email"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.email}
+                  placeholder="Email..."
+                />
+              </div>
+            </div>
+            <div className="contact-section__input-group">
               <textarea
+                className="contact-section__textarea"
                 name="message"
+                rows={6}
                 onChange={handleChange}
                 onBlur={handleBlur}
                 value={values.message}
+                placeholder="Enter your message here..."
               />
               {errors.message && touched.message && errors.message}
+            </div>
 
-              <button type="submit" disabled={isSubmitting}>
-                Submit
-              </button>
-            </form>
-          )}
-        </Formik>
-      </div>
+            <button
+              className="contact-section__button"
+              type="submit"
+              disabled={isSubmitting}
+            >
+              Submit
+            </button>
+          </form>
+        )}
+      </Formik>
     </section>
   );
 };

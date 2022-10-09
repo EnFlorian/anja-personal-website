@@ -1,0 +1,8 @@
+.portfolio-section {
+  display: flex;
+  flex-direction: column;
+
+  &__wrapper {
+    background-color: red;
+  }
+}

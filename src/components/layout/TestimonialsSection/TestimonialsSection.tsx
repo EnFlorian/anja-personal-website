@@ -10,11 +10,11 @@ const TestimonialsSection = () => {
   ));
 
   return (
-    <section id="testimonials" className="services-section">
-      <div className="services-section__wrapper container-xl">
-        <SectionHeader title="Testimonials" subtitle="What my clients say" />
-        <ul className="services-section__slider">{renderedTestimonials}</ul>
-      </div>
+    <section id="testimonials" className="testimonials-section   container-lg">
+      <SectionHeader title="Testimonials" subtitle="What my clients say" />
+      <ul className="testimonials-section__testimonials">
+        {renderedTestimonials}
+      </ul>
     </section>
   );
 };

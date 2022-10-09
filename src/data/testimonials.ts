@@ -33,11 +33,4 @@ export const testimonials = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl nec aliquam tincidunt, nunc elit lacinia nisl, vitae aliquam nisl nunc vel mauris. Sed euismod, nisl nec aliquam tincidunt, nunc elit lacinia nisl, vitae aliquam nisl nunc vel mauris.",
   },
-  {
-    name: "Jane Doe",
-    image: person6,
-    title: "CEO of ABC Company",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl nec aliquam tincidunt, nunc elit lacinia nisl, vitae aliquam nisl nunc vel mauris. Sed euismod, nisl nec aliquam tincidunt, nunc elit lacinia nisl, vitae aliquam nisl nunc vel mauris.",
-  },
 ];

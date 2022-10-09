@@ -1,0 +1,10 @@
+.testimonials-section {
+  display: flex;
+  flex-direction: column;
+
+  &__testimonials {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+}

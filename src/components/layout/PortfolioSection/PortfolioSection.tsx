@@ -6,10 +6,10 @@ const PortfolioSection = () => {
   const tags = [...new Set(projects.map((project) => project.tags).flat())];
 
   return (
-    <section id="portfolio" className="services-section">
-      <div className="services-section__wrapper container-xl">
+    <section id="portfolio" className="portfolio-section">
+      <div className="portfolio-section__wrapper container-lg">
         <SectionHeader
-          title="Services"
+          title="Portfolio"
           subtitle="What I offer and what I can do for you"
         />
         <ProjectsGallery projects={projects} tabs={tags} />
