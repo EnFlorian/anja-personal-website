@@ -28,7 +28,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="services-section">
+    <section id="contact" className="services-section">
       <div className="services-section__wrapper container-xl">
         <SectionHeader title="Contact Me" subtitle="Get in touch with me" />
 

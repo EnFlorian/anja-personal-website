@@ -1,22 +1,18 @@
-import { ProjectCard, SectionHeader } from "../../elements";
+import { ProjectCard, ProjectsGallery, SectionHeader } from "../../elements";
 import { projects } from "../../../data/projects";
 import "./PortfolioSection.scss";
 
 const PortfolioSection = () => {
-  const renderedProjects = projects.map((project, index) => (
-    <li key={index}>
-      <ProjectCard {...project} />
-    </li>
-  ));
+  const tags = [...new Set(projects.map((project) => project.tags).flat())];
 
   return (
-    <section className="services-section">
+    <section id="portfolio" className="services-section">
       <div className="services-section__wrapper container-xl">
         <SectionHeader
           title="Services"
           subtitle="What I offer and what I can do for you"
         />
-        <ul className="services-section__services">{renderedProjects}</ul>
+        <ProjectsGallery projects={projects} tabs={tags} />
       </div>
     </section>
   );

@@ -1,0 +1,11 @@
+.services-section {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5rem;
+
+  &__services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 3rem;
+  }
+}

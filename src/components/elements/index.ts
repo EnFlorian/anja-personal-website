@@ -4,6 +4,7 @@ import SectionHeader from "./SectionHeader/SectionHeader";
 import ServiceCard from "./ServiceCard/ServiceCard";
 import TestimonialCard from "./TestimonialCard/TestimonialCard";
 import SectionDivider from "./SectionDivider/SectionDivider";
+import MobileMenu from "./MobileMenu/MobileMenu";
 
 export {
   ProjectCard,
@@ -12,4 +13,5 @@ export {
   ServiceCard,
   TestimonialCard,
   SectionDivider,
+  MobileMenu,
 };

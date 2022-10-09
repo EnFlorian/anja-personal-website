@@ -1,0 +1,41 @@
+.project-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__tabs {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  &__tab {
+    border: none;
+    background: none;
+    padding: 0.3rem 0.8rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: var(--transition-fast);
+
+    &:hover {
+      background: var(--gradient-1);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    &--active {
+      background: var(--gradient-1);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &__projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-gap: 2rem;
+    width: 100%;
+  }
+}

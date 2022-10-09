@@ -1,27 +1,27 @@
 export const links = [
   {
     name: "Home",
-    path: "/",
+    path: "navbar",
     offset: 0,
   },
   {
     name: "Services",
-    path: "/services",
+    path: "services",
     offset: 0,
   },
   {
     name: "Portfolio",
-    path: "/portfolio",
+    path: "portfolio",
     offset: 0,
   },
   {
     name: "Testimonials",
-    path: "/testimonials",
+    path: "testimonials",
     offset: 0,
   },
   {
     name: "Contact",
-    path: "/contact",
+    path: "contact",
     offset: 0,
   },
 ];

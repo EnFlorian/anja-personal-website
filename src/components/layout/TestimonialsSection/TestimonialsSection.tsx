@@ -10,7 +10,7 @@ const TestimonialsSection = () => {
   ));
 
   return (
-    <section className="services-section">
+    <section id="testimonials" className="services-section">
       <div className="services-section__wrapper container-xl">
         <SectionHeader title="Testimonials" subtitle="What my clients say" />
         <ul className="services-section__slider">{renderedTestimonials}</ul>
