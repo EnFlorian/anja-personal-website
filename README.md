@@ -1,4 +1,4 @@
-#🥥 Anja - Personal Website
+# 🥥 Anja - Personal Website
 
 ### A modern personal website with gradient look that is implemented with Typescript and React. 
 
