@@ -1,18 +1,18 @@
 export const links = [
   {
     name: "Home",
-    path: "navbar",
+    path: "home",
     offset: 0,
   },
   {
     name: "Services",
     path: "services",
-    offset: 0,
+    offset: 13,
   },
   {
     name: "Portfolio",
     path: "portfolio",
-    offset: 0,
+    offset: 15,
   },
   {
     name: "Testimonials",

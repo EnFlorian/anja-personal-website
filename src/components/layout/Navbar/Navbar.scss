@@ -41,6 +41,13 @@
     font-weight: 500;
     transition: var(--transition-fast);
 
+    &--active {
+      background: var(--gradient-1);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
     &:hover {
       background: var(--gradient-1);
       background-clip: text;

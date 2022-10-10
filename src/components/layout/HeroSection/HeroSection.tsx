@@ -3,7 +3,7 @@ import heroImage from "../../../assets/images/person1.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="hero-section">
+    <section id="home" className="hero-section">
       <div className="hero-section__wrapper container-lg">
         <div className="hero-section__main-content">
           <div className="hero-section__left-content">
@@ -14,8 +14,8 @@ const HeroSection = () => {
           <div className="hero-section__right-content">
             <h1 className="hero-section__title">Hi, I'm Anja Doe</h1>
             <p className="hero-section__subtitle">
-              I'm a designer and mobile developer specializing in Android and
-              iOS development and UI/UX design.
+              I'm a designer and mobile developer specializing in Android and iOS development and
+              UI/UX design.
             </p>
             <button className="hero-section__cta-button">Hire Me</button>
           </div>

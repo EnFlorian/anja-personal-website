@@ -14,6 +14,7 @@ const Navbar = () => {
       <ScrollLink
         className="navbar__link"
         offset={link.offset}
+        activeClass="navbar__link--active"
         smooth={true}
         spy={true}
         to={link.path}
