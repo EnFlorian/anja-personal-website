@@ -1,7 +1,7 @@
 .services-section {
   display: flex;
   flex-direction: column;
-  padding-bottom: 5rem;
+  padding-bottom: 10rem;
 
   &__services {
     display: grid;
@@ -12,6 +12,7 @@
 
 @media screen and (max-width: 768px) {
   .services-section {
+    padding-bottom: 5rem;
     &__services {
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }

@@ -7,10 +7,7 @@ const PortfolioSection = () => {
 
   return (
     <section id="portfolio" className="portfolio-section container-lg">
-      <SectionHeader
-        title="Portfolio"
-        subtitle="What I offer and what I can do for you"
-      />
+      <SectionHeader title="Portfolio" subtitle="Here are some of my recent projects" />
       <ProjectsGallery projects={projects} tabs={tags} />
     </section>
   );

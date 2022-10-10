@@ -13,11 +13,10 @@ const MobileMenu = ({ onClose }: IMobileMenuProps) => {
     <li key={index} onClick={() => onClose(false)}>
       <ScrollLink
         className="mobile-menu__link"
-        to={link.path}
-        spy={true}
-        smooth={true}
         offset={link.offset}
-        onClick={() => onClose(false)}
+        smooth={true}
+        spy={true}
+        to={link.path}
       >
         {link.name}
       </ScrollLink>

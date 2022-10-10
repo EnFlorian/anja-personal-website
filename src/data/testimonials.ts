@@ -6,16 +6,16 @@ import person6 from "../assets/images/person6.jpg";
 
 export const testimonials = [
   {
-    name: "Jane Doe",
+    name: "John Doe",
     image: person2,
     title: "CEO of ABC Company",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl nec aliquam tincidunt, nunc elit lacinia nisl, vitae aliquam nisl nunc vel mauris. Sed euismod, nisl nec aliquam tincidunt, nunc elit lacinia nisl, vitae aliquam nisl nunc vel mauris.",
   },
   {
-    name: "John Doe",
+    name: "Jane Doe",
     image: person3,
-    title: "CEO of ABC Company",
+    title: "CTO of ABC Company",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl nec aliquam tincidunt, nunc elit lacinia nisl, vitae aliquam nisl nunc vel mauris. Sed euismod, nisl nec aliquam tincidunt, nunc elit lacinia nisl, vitae aliquam nisl nunc vel mauris.",
   },
@@ -29,7 +29,7 @@ export const testimonials = [
   {
     name: "John Doe",
     image: person5,
-    title: "CEO of ABC Company",
+    title: "Founder of ABC",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl nec aliquam tincidunt, nunc elit lacinia nisl, vitae aliquam nisl nunc vel mauris. Sed euismod, nisl nec aliquam tincidunt, nunc elit lacinia nisl, vitae aliquam nisl nunc vel mauris.",
   },

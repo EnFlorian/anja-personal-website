@@ -1,5 +1,6 @@
 import "./HeroSection.scss";
 import heroImage from "../../../assets/images/person1.jpg";
+import { Link as ScrollLink } from "react-scroll";
 
 const HeroSection = () => {
   return (
@@ -17,24 +18,18 @@ const HeroSection = () => {
               I'm a designer and mobile developer specializing in Android and iOS development and
               UI/UX design.
             </p>
-            <button className="hero-section__cta-button">Hire Me</button>
+            <ScrollLink smooth={true} spy={true} to="contact" className="button">
+              Get in Touch
+            </ScrollLink>
           </div>
         </div>
         <div className="hero-section__footer">
-          <div className="hero-section__footer-left-content">
-            <div className="hero-section__info">
-              <span>9</span>
-              <p>Years of Experience</p>
-            </div>
-            <div className="hero-section__info">
-              <span className="hero-section__number">9</span>projects completed
-            </div>
+          <div className="hero-section__info">
+            <span className="hero-section__number">10</span>
+            <p>Years of Experience</p>
           </div>
-          <div className="hero-section__footer-right-content">
-            <div className="hero-section__info">
-              <span>Get in touch</span>
-              Icon
-            </div>
+          <div className="hero-section__info">
+            <span className="hero-section__number">129</span>projects completed
           </div>
         </div>
       </div>

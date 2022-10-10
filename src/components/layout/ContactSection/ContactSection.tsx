@@ -30,7 +30,7 @@ const ContactSection = () => {
 
   return (
     <section id="contact" className="contact-section container-lg">
-      <SectionHeader title="Contact Me" subtitle="Get in touch with me" />
+      <SectionHeader title="Contact Me" subtitle="Contact me for any questions or suggestions" />
 
       <Formik
         initialValues={{
@@ -88,7 +88,7 @@ const ContactSection = () => {
               {errors.message && touched.message && errors.message}
             </div>
 
-            <button className="contact-section__button" type="submit" disabled={isSubmitting}>
+            <button className="button" type="submit" disabled={isSubmitting}>
               Submit
             </button>
           </form>

@@ -7,35 +7,35 @@ import project6 from "../assets/images/project7.jpg";
 
 export const projects = [
   {
-    title: "Cool advanced mobile app",
+    title: "E-Commerce Website using React",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     image: project1,
-    tags: ["App", "Creative", "Mobile"],
+    tags: ["App", "Mobile"],
     link: "https://www.github.com",
   },
   {
-    title: "Cool advanced mobile app",
+    title: "Wiry website design",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     image: project2,
     tags: ["App", "Creative", "Mobile"],
     link: "https://www.github.com",
   },
   {
-    title: "Cool advanced mobile app",
+    title: "Hellworth website design",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     image: project3,
     tags: ["App", "Creative", "Desktop"],
     link: "https://www.github.com",
   },
   {
-    title: "Cool advanced mobile app",
+    title: "Marketing design app",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     image: project4,
     tags: ["App", "Creative", "Mobile"],
     link: "https://www.github.com",
   },
   {
-    title: "Cool advanced mobile app",
+    title: "Store dashboard mobile app",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     image: project5,
     tags: ["App", "Creative", "Mobile"],
