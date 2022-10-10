@@ -2,4 +2,48 @@
   border: 2px solid var(--clr-bg-2);
   padding: 2rem;
   border-radius: 1.5rem;
+  display: flex;
+  gap: 2rem;
+
+  &__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+  }
+
+  &__content {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--clr-text-1);
+  }
+}
+
+// Media Queries
+@media screen and (max-width: 768px) {
+  .service-card {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .service-card__icon {
+    margin-bottom: 1rem;
+  }
+
+  .service-card__content {
+    text-align: center;
+  }
+
+  .service-card__title {
+    font-size: 1.5rem;
+  }
 }

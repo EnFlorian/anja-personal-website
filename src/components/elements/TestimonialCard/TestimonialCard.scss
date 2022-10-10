@@ -1,36 +1,37 @@
 .testimonial-card {
   background-color: var(--clr-bg-2);
-  display: flex;
-  padding: 1rem;
   border-radius: 0.2rem;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
 
   &__left-content {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     flex: 1;
+    justify-content: center;
   }
 
   &__right-content {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     flex: 2;
+    justify-content: center;
   }
 
   &__image-wrapper {
-    height: 10rem;
-    width: 10rem;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 0.2rem solid transparent;
-    border-radius: 50%;
+    background-clip: padding-box, border-box;
     background-image: linear-gradient(white, white), var(--gradient-1);
     background-origin: border-box;
-    background-clip: padding-box, border-box;
+    border-radius: 50%;
+    border-radius: 50%;
+    border: 0.2rem solid transparent;
+    height: 7rem;
+    object-fit: cover;
     overflow: hidden;
+    width: 7rem;
   }
 
   &__image {
@@ -41,20 +42,55 @@
   }
 
   &__name {
-    font-size: 1.5rem;
-    font-weight: 700;
     color: var(--clr-text-1);
+    font-size: 1.2rem;
+    font-weight: 700;
   }
 
   &__title {
-    font-size: 0.9rem;
-    font-weight: 500;
     color: var(--clr-text-2);
+    font-size: 0.8rem;
+    font-weight: 500;
   }
 
   &__description {
+    color: var(--clr-text-1);
     font-size: 1rem;
     font-weight: 400;
-    color: var(--clr-text-2);
+  }
+}
+
+// Media Queries
+
+@media screen and (max-width: 768px) {
+  .testimonial-card {
+    padding: 2rem 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5;
+
+    &__image-wrapper {
+      margin-bottom: 1rem;
+    }
+
+    &__left-content {
+      margin-bottom: 1rem;
+    }
+
+    &__right-content {
+      text-align: center;
+    }
+
+    &__name {
+      font-size: 1.5rem;
+    }
+
+    &__title {
+      font-size: 1.1rem;
+    }
+
+    &__description {
+      font-size: 1rem;
+    }
   }
 }

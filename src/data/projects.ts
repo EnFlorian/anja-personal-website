@@ -45,7 +45,7 @@ export const projects = [
     title: "Cool advanced mobile app",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     image: project6,
-    tags: ["Fitness", "Creative", "Mobile"],
+    tags: ["Creative", "Mobile"],
     link: "https://www.github.com",
   },
 ];

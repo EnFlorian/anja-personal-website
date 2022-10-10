@@ -8,13 +8,7 @@ export interface IProjectCardProps {
   link: string;
 }
 
-const ProjectCard = ({
-  title,
-  description,
-  image,
-  tags,
-  link,
-}: IProjectCardProps) => {
+const ProjectCard = ({ title, description, image, tags, link }: IProjectCardProps) => {
   return (
     <div className="project-card">
       <div className="project-card__header">

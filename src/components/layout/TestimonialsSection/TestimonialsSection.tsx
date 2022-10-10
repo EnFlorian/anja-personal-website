@@ -1,5 +1,5 @@
-import { SectionHeader, TestimonialCard } from "../../elements";
 import "./TestimonialsSection.scss";
+import { SectionHeader, TestimonialCard } from "../../elements";
 import { testimonials } from "../../../data/testimonials";
 
 const TestimonialsSection = () => {
@@ -12,9 +12,7 @@ const TestimonialsSection = () => {
   return (
     <section id="testimonials" className="testimonials-section   container-lg">
       <SectionHeader title="Testimonials" subtitle="What my clients say" />
-      <ul className="testimonials-section__testimonials">
-        {renderedTestimonials}
-      </ul>
+      <ul className="testimonials-section__testimonials">{renderedTestimonials}</ul>
     </section>
   );
 };

@@ -1,6 +1,6 @@
-import ProjectCard, { IProjectCardProps } from "../ProjectCard/ProjectCard";
-import { useState } from "react";
 import "./ProjectsGallery.scss";
+import { useState } from "react";
+import ProjectCard, { IProjectCardProps } from "../ProjectCard/ProjectCard";
 
 interface IProjectsGalleryProps {
   projects: IProjectCardProps[];
@@ -16,7 +16,7 @@ const ProjectsGallery = ({ projects, tabs }: IProjectsGalleryProps) => {
 
   return (
     <div className="project-gallery">
-      <div className="project-gallery__wrapper container-xl">
+      <div className="project-gallery__wrapper container-lg">
         <ul className="project-gallery__tabs">
           {tabs.map((tab, index) => (
             <li key={index}>

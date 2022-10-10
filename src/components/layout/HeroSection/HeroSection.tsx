@@ -12,7 +12,7 @@ const HeroSection = () => {
             </div>
           </div>
           <div className="hero-section__right-content">
-            <h1 className="hero-section__title">Hi, I'm John Doe</h1>
+            <h1 className="hero-section__title">Hi, I'm Anja Doe</h1>
             <p className="hero-section__subtitle">
               I'm a designer and mobile developer specializing in Android and
               iOS development and UI/UX design.
@@ -22,28 +22,18 @@ const HeroSection = () => {
         </div>
         <div className="hero-section__footer">
           <div className="hero-section__footer-left-content">
-            <div>
+            <div className="hero-section__info">
               <span>9</span>
-              <div>
-                <span>years</span>
-                <span>experience</span>
-              </div>
+              <p>Years of Experience</p>
             </div>
-            <div>
-              <span>9</span>
-              <div>
-                <span>projects </span>
-                <span>completed</span>
-              </div>
+            <div className="hero-section__info">
+              <span className="hero-section__number">9</span>projects completed
             </div>
           </div>
           <div className="hero-section__footer-right-content">
-            <div>
-              <div>
-                <span>Get in touch</span>
-                <span>john.doe@gmail.com</span>
-              </div>
-              <span>Icon</span>
+            <div className="hero-section__info">
+              <span>Get in touch</span>
+              Icon
             </div>
           </div>
         </div>

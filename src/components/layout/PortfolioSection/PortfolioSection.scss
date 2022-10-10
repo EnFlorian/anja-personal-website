@@ -1,8 +1,12 @@
 .portfolio-section {
   display: flex;
   flex-direction: column;
+  padding-bottom: 10rem;
+}
 
-  &__wrapper {
-    background-color: red;
+// Media Queries
+@media screen and (max-width: 768px) {
+  .portfolio-section {
+    padding-bottom: 5rem;
   }
 }

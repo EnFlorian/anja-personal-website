@@ -1,13 +1,13 @@
 import "./Navbar.scss";
+import { AnimatePresence } from "framer-motion";
 import { GrMenu } from "react-icons/gr";
 import { Link as ScrollLink } from "react-scroll";
 import { links } from "../../../data/navigation";
 import { MobileMenu } from "../../elements";
 import { useState } from "react";
-import { AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const renderedLinks = links.map((link, index) => (
     <li key={index}>
@@ -38,14 +38,12 @@ const Navbar = () => {
         <h1 className="navbar__logo">Logo</h1>
         <ul className="navbar__links">
           {renderedLinks}
-          <li className="navbar__link" onClick={() => setIsMenuOpen(true)}>
+          <li onClick={() => setIsMenuOpen(true)}>
             <GrMenu className="navbar__mobile-button" />
           </li>
         </ul>
       </div>
-      <AnimatePresence>
-        {isMenuOpen && <MobileMenu onClose={setIsMenuOpen} />}
-      </AnimatePresence>
+      <AnimatePresence>{isMenuOpen && <MobileMenu onClose={setIsMenuOpen} />}</AnimatePresence>
     </section>
   );
 };

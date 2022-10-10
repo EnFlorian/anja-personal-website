@@ -5,17 +5,14 @@ const IntermissionSection = () => {
   return (
     <section className="intermission-section container-xl">
       <div className="intermission-section__left-content">
-        <img
-          className="intermission-section__image"
-          src={intermissionImage}
-          alt="intermission"
-        />
+        <img className="intermission-section__image" src={intermissionImage} alt="intermission" />
       </div>
       <div className="intermission-section__right-content">
         <h1 className="intermission-section__title"> 10 Years of Experience</h1>
-        <h2 className="intermission-section__subtitle">I'm a subtitle</h2>
+        <h2 className="intermission-section__subtitle">As a full-stack graphics designer</h2>
         <p className="intermission-section__description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam Conesnam spsum dolor int
+          notures lamet consectetur adipisicing eli.{" "}
         </p>
         <div className="intermission-section__bars">
           <div className="intermission-section__bar">

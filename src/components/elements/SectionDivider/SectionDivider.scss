@@ -1,7 +1,7 @@
 .section-divider {
-  position: absolute;
-  height: 0.15rem;
   background-image: var(--gradient-1);
+  height: 0.15rem;
+  position: absolute;
 
   &__wrapper {
     position: relative;

@@ -1,6 +1,7 @@
-import { Formik } from "formik";
-import { SectionHeader } from "../../elements";
 import "./ContactSection.scss";
+import { Formik } from "formik";
+import { NotificationModal, SectionHeader } from "../../elements";
+import { useState } from "react";
 
 interface IFormValues {
   email?: string;
@@ -9,13 +10,13 @@ interface IFormValues {
 }
 
 const ContactSection = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const validateForm = (values: IFormValues) => {
     const errors: IFormValues = {};
     if (!values.email) {
       errors.email = "Required";
-    } else if (
-      !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)
-    ) {
+    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
       errors.email = "Invalid email address";
     }
     if (!values.name) {
@@ -32,23 +33,19 @@ const ContactSection = () => {
       <SectionHeader title="Contact Me" subtitle="Get in touch with me" />
 
       <Formik
-        initialValues={{ name: "", email: "", message: "" }}
+        initialValues={{
+          name: "Mr. Demo",
+          email: "demo@user.com",
+          message: "Hello World!",
+        }}
         validate={validateForm}
         onSubmit={(values, { setSubmitting }) => {
           setSubmitting(true);
-          // TODO: Send form data to backend
+          setIsModalOpen(true);
           console.log(values);
         }}
       >
-        {({
-          values,
-          errors,
-          touched,
-          handleChange,
-          handleBlur,
-          handleSubmit,
-          isSubmitting,
-        }) => (
+        {({ values, errors, touched, handleChange, handleBlur, handleSubmit, isSubmitting }) => (
           <form className="contact-section__form" onSubmit={handleSubmit}>
             <div className="contact-section__form-details">
               <div className="contact-section__input-group">
@@ -91,16 +88,20 @@ const ContactSection = () => {
               {errors.message && touched.message && errors.message}
             </div>
 
-            <button
-              className="contact-section__button"
-              type="submit"
-              disabled={isSubmitting}
-            >
+            <button className="contact-section__button" type="submit" disabled={isSubmitting}>
               Submit
             </button>
           </form>
         )}
       </Formik>
+      {isModalOpen && (
+        <NotificationModal
+          title="Success"
+          description="You have successfully subscribed to our newsletter"
+          closeModalFunc={setIsModalOpen}
+          isOpen={isModalOpen}
+        />
+      )}
     </section>
   );
 };

@@ -1,8 +1,7 @@
 .project-gallery {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: blue;
 
   &__tabs {
     display: flex;
@@ -10,12 +9,12 @@
   }
 
   &__tab {
-    border: none;
     background: none;
-    padding: 0.3rem 0.8rem;
+    border: none;
     cursor: pointer;
     font-size: 1.2rem;
     font-weight: 500;
+    padding: 0.3rem 0.8rem;
     transition: var(--transition-fast);
 
     &:hover {
@@ -38,5 +37,17 @@
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     grid-gap: 2rem;
     max-width: 100%;
+  }
+}
+
+//Media Queries
+@media screen and (max-width: 768px) {
+  .project-gallery {
+    &__tab {
+      font-size: 1rem;
+    }
+    &__projects {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
   }
 }

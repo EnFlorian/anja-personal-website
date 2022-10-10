@@ -7,12 +7,7 @@ interface ITestimonialCardProps {
   description: string;
 }
 
-const TestimonialCard = ({
-  name,
-  image,
-  title,
-  description,
-}: ITestimonialCardProps) => {
+const TestimonialCard = ({ name, image, title, description }: ITestimonialCardProps) => {
   return (
     <div className="testimonial-card">
       <div className="testimonial-card__left-content">

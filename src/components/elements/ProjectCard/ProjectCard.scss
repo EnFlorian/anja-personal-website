@@ -1,23 +1,20 @@
 .project-card {
   background-color: var(--clr-bg-2);
-  padding: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  padding: 2rem;
 
   &__title {
+    color: var(--clr-text-1);
     font-size: 1.7rem;
     font-weight: 700;
-    color: var(--clr-text-1);
   }
 
   &__description {
-    font-size: 1rem;
     color: var(--clr-text-2);
+    font-size: 1rem;
     font-weight: 400;
-  }
-
-  &__image-wrapper {
   }
 
   &__image {
@@ -26,16 +23,16 @@
   }
 
   &__tags {
-    display: flex;
     align-items: center;
+    display: flex;
     gap: 0.5rem;
   }
 
   &__tag {
-    padding: 0.2rem 0.5rem;
+    background-color: var(--clr-bg-1);
     border-radius: 0.2rem;
     font-size: 1rem;
     font-weight: 400;
-    background-color: var(--clr-bg-1);
+    padding: 0.2rem 0.5rem;
   }
 }

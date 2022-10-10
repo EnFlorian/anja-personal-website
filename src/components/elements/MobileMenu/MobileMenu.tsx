@@ -1,7 +1,7 @@
 import "./MobileMenu.scss";
-import { links } from "../../../data/navigation";
-import { Link as ScrollLink } from "react-scroll";
 import { IoCloseSharp } from "react-icons/io5";
+import { Link as ScrollLink } from "react-scroll";
+import { links } from "../../../data/navigation";
 import { motion } from "framer-motion";
 
 interface IMobileMenuProps {
