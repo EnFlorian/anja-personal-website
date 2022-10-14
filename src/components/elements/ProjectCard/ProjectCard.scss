@@ -1,9 +1,17 @@
 .project-card {
   background-color: var(--clr-bg-2);
+  border-radius: 0.3rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   padding: 2rem;
+
+  // on hover zoom in on image
+  &:hover {
+    .project-card__image {
+      transform: scale(0.95);
+    }
+  }
 
   &__title {
     color: var(--clr-text-1);
@@ -20,6 +28,7 @@
   &__image {
     height: 100%;
     object-fit: cover;
+    transition: var(--transition-slow);
   }
 
   &__tags {

@@ -58,7 +58,7 @@ const NotificationModal = ({
           <p className="notification-modal__description">{description}</p>
         </div>
         <div>
-          <button className="notification-modal__button" onClick={closeModal}>
+          <button className="button" onClick={closeModal}>
             Close
           </button>
         </div>

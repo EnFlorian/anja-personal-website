@@ -34,15 +34,15 @@ const ContactSection = () => {
 
       <Formik
         initialValues={{
-          name: "Mr. Demo",
-          email: "demo@user.com",
-          message: "Hello World!",
+          name: "",
+          email: "",
+          message: "",
         }}
         validate={validateForm}
-        onSubmit={(values, { setSubmitting }) => {
-          setSubmitting(true);
+        onSubmit={(values, { setSubmitting, resetForm }) => {
+          setSubmitting(false);
           setIsModalOpen(true);
-          console.log(values);
+          resetForm();
         }}
       >
         {({ values, errors, touched, handleChange, handleBlur, handleSubmit, isSubmitting }) => (
